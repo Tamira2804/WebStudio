@@ -368,6 +368,16 @@ h6 {
   line-height: 1.17;
   text-transform: uppercase;
 }
+
+.footer .subtitle {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--title-color-inverted);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 .footer .text {
   padding-top: 16px;
   width: 264px;
@@ -381,12 +391,11 @@ h6 {
 
 .social-media {
   display: block;
+  margin-right: 80px;
 }
 
-.social-media .subtitle {
-  color: var(--title-color-inverted);
-  margin-top: 0;
-  margin-bottom: 16px;
+.social-list.list {
+  gap: 16px;
 }
 
 .social-link.inverted {
@@ -404,6 +413,64 @@ h6 {
 .social-link.inverted:hover,
 .social-link.inverted:focus {
   background-color: var(--bg-color-hover-footer);
+}
+
+/*Form Subscribe*/
+
+.subscribe-form {
+  display: flex;
+}
+
+.email-label {
+}
+
+.email-input {
+  box-sizing: border-box;
+  width: 264px;
+  height: 40px;
+  margin-right: 24px;
+  padding: 8px 18px;
+
+  border: 1px solid var(--bg-color-main);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.email-input[placeholder] {
+  color: var(--title-color-inverted);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.subscribe-send {
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-accent);
+  border-radius: 4px;
+}
+
+.subscribe-btn {
+  padding: 0;
+  color: var(--title-color-inverted);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
+  background-color: transparent;
+  border: none;
+}
+
+.icon-send {
+  width: 24px;
+  height: 24px;
+  fill: var(--logo-color-light);
 }
 
 /*PORTFOLIO*/
@@ -574,9 +641,78 @@ h6 {
   cursor: pointer;
 }
 
-.modal-icon {
+.icon-close {
   display: block;
   width: 8px;
   height: 8px;
   margin: auto;
+}
+
+.modal-form {
+  position: absolute;
+  top: 72px;
+  left: 24px;
+  right: 24px;
+  color: var(--bg-color-inactive);
+  font-size: 12px;
+}
+
+.modal-form .subtitle {
+  margin-top: 0;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.subscribe-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-field {
+  position: relative;
+  margin-bottom: 8px;
+  /*  display: flex;
+  flex-direction: column; */
+}
+
+.subscribe-field .label {
+  margin-bottom: 4px;
+}
+
+.subscribe-field .input {
+  width: 100%;
+  padding: 11px 16px 11px 38px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.icon {
+  position: absolute;
+  top: 11px;
+  left: 16px;
+  width: 18px;
+  height: 24px;
+}
+
+textarea[placeholder] {
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.send-btn {
+  width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--title-color-inverted);
+  background-color: var(--bg-color-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
 }
