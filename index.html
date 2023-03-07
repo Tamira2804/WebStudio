@@ -468,56 +468,56 @@
 
         <form class="modal-form">
           <p class="subtitle">Leave your contacts and we will call you back</p>
-          <ul class="subscribe-list list">
-            <li class="subscribe-field">
+          <ul class="contacts-list list">
+            <li class="contacts-field">
               <label class="label"
                 >Name
-                <input class="input" type="text" name="name" />
+                <input class="contacts-input" type="text" name="name" />
 
                 <svg class="icon">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </label>
             </li>
-            <li class="subscribe-field">
+            <li class="contacts-field">
               <label class="label"
                 >Phone
-                <input class="input" type="tel" name="phone" />
+                <input class="contacts-input" type="tel" name="phone" />
 
                 <svg class="icon">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </label>
             </li>
-            <li class="subscribe-field">
+            <li class="contacts-field">
               <label class="label"
                 >Email
-                <input class="input" type="email" name="email" />
+                <input class="contacts-input" type="email" name="email" />
 
                 <svg class="icon">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </label>
             </li>
-            <li class="subscribe-field">
+            <li class="contacts-field">
               <label class="label"
                 >Comment
                 <textarea
-                  class="input"
+                  class="contacts-input textarea"
                   name="comment"
                   rows="10"
                   placeholder="Text input"
                 ></textarea>
               </label>
             </li>
-            <li>
-              <label class="agreement-label">
-                <input class="agreement-checkbox" type="checkbox" />
-                I accept the terms and conditions of the
-                <a class="privacy-police" href="">Privacy Policy</a>
-              </label>
-            </li>
           </ul>
+          <div class="agreement">
+            <label class="agreement-label">
+              <input class="agreement-checkbox" type="checkbox" />
+              I accept the terms and conditions of the
+              <a class="privacy-police" href="">Privacy Policy</a>
+            </label>
+          </div>
           <button type="submit" class="send-btn">Send</button>
         </form>
       </div>
