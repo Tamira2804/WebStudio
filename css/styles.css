@@ -653,7 +653,6 @@ h6 {
 .modal-form {
   color: var(--bg-color-inactive);
   font-size: 12px;
-  border: 2px dotted tomato;
 }
 
 .modal-form .subtitle {
@@ -715,6 +714,36 @@ h6 {
 }
 
 .agreement-label {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  padding-left: 24px;
+  line-height: 1.33;
+}
+
+.check-input {
+  position: absolute;
+  appearance: none;
+}
+
+.full-check {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--bg-color-dark);
+  border-radius: 2px;
+  background-color: var(--bg-color-modal);
+  fill: none;
+}
+
+.check-input:checked + .full-check {
+  border-color: var(--bg-color-hover);
+  background-color: var(--bg-color-hover);
+  fill: var(--bg-color-main);
+  stroke: var(--bg-color-main);
 }
 
 .privacy-police {
@@ -742,4 +771,5 @@ h6 {
 .send-btn:focus,
 .send-btn:hover {
   background-color: var(--bg-color-hover);
+  cursor: pointer;
 }
