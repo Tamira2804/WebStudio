@@ -718,6 +718,7 @@ h6 {
 }
 
 .contacts-input.textarea {
+  resize: none;
   padding-left: 16px;
   color: rgba(46, 47, 66, 0.4);
 }
