@@ -417,7 +417,7 @@ h6 {
 
 /*Form Subscribe*/
 
-.subscribe-form {
+.subscribe-field {
   display: flex;
 }
 
@@ -626,8 +626,7 @@ h6 {
   height: 100%;
   max-width: 408px;
   max-height: 576px;
-  padding: 72px 24px 0 24px;
-  padding-top: 72px;
+  padding: 72px 24px 24px 24px;
   border-radius: 4px;
   background-color: var(--bg-color-modal);
   overflow: auto;
@@ -672,14 +671,9 @@ h6 {
   text-align: center;
 }
 
-.contacts-list {
-  display: flex;
-  flex-direction: column;
-}
-
 .contacts-field {
   position: relative;
-  display: block;
+
   margin-bottom: 8px;
   transition-property: border-color, fill;
   transition-duration: 250ms;
@@ -707,6 +701,7 @@ h6 {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 }
 
 .icon {
@@ -721,6 +716,7 @@ h6 {
   resize: none;
   padding-left: 16px;
   color: rgba(46, 47, 66, 0.4);
+  outline: none;
 }
 
 .agreement-label {
@@ -728,8 +724,11 @@ h6 {
   top: 0;
   left: 0;
   display: block;
+  margin-bottom: 24px;
   padding-left: 24px;
+  font-size: 12px;
   line-height: 1.33;
+  letter-spacing: 0.04em;
 }
 
 .check-input {
@@ -758,13 +757,14 @@ h6 {
 
 .privacy-police {
   margin-left: 2px;
+  color: var(--bg-color-accent);
 }
 
 .send-btn {
   display: block;
   width: 169px;
   height: 56px;
-  margin: 24px auto;
+  margin: auto;
   padding: 16px 32px;
 
   font-weight: 500;
