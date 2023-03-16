@@ -596,6 +596,7 @@ h6 {
   color: var(--text-color-primary);
 }
 
+/*Modal*/
 .backdrop {
   position: fixed;
   top: 0;
