@@ -41,11 +41,25 @@ h6 {
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 4288px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  outline: 4px solid tomato;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 /*Header*/
@@ -274,14 +288,15 @@ h6 {
 .features-list {
   flex-direction: column;
   align-items: center;
-  margin-bottom: -72px;
+  gap: 72px;
 }
 
 @media screen and (min-width: 768px) {
   .features-list {
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     flex-wrap: wrap;
+    column-gap: 24px;
   }
 }
 
@@ -293,12 +308,13 @@ h6 {
 
 .features-item {
   flex-basis: 100%;
-  margin-bottom: 72px;
+  max-width: 396px;
 }
 
 @media screen and (min-width: 768px) {
   .features-item {
     flex-basis: calc((100%-24px) / 2);
+    max-width: 356px;
   }
 }
 
@@ -306,12 +322,6 @@ h6 {
   .features-item {
     align-items: flex-start;
     flex-basis: calc((100%-72px) / 4);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .features-item:not(:last-child) {
-    margin-right: 24px;
   }
 }
 
@@ -562,20 +572,35 @@ h6 {
 @media screen and (min-width: 768px) {
   .footer .container {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 72px 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer .container {
+    padding-left: 108px;
+    padding-right: 108px;
   }
 }
 
 .footer .studio {
-  width: 264px;
+  max-width: 268px;
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 768px) {
+  .footer .studio {
+    max-width: 264px;
+    margin-right: 24px;
+    margin-left: 0;
+  }
+}
+
 .footer .logo {
   padding: 0 0;
+  margin-right: 0;
   margin-bottom: 16px;
+
   font-family: "Raleway", sans-serif;
   color: var(--logo-color-light);
   font-weight: 800;
@@ -583,6 +608,7 @@ h6 {
   line-height: 1.17;
   text-transform: uppercase;
 }
+
 @media screen and (max-width: 767px) {
   .footer .logo {
     text-align: center;
@@ -632,8 +658,8 @@ h6 {
 .social-link.inverted:focus {
   background-color: var(--bg-color-hover-footer);
 }
+
 .container > .subscribe {
-  border: 2px dotted teal;
 }
 .subscribe-field {
   display: flex;
@@ -646,6 +672,7 @@ h6 {
     gap: 16px;
   }
 }
+
 .email-label {
   width: 398px;
 }
