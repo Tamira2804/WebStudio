@@ -1,15 +1,12 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-форма футер
-Subscribe
-input Email
-btn type="submit" Subscribe + ::after svg send-icon
+Mobile-first
 
-форма модалка
-Leave your contacts and we will call you back
-input Name
-input Phone
-input Email
-textarea Comment
-checkbox I accept
-btn type="submit" Send
+break-points
+480
+768
+1200
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1200px) {}

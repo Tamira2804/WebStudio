@@ -22,13 +22,21 @@
   </head>
 
   <body>
-    <!--Шапка-->
-    <header class="page-header">
-      <div class="container">
-        <nav class="site-nav">
-          <a class="logo" href="./index.html">
-            <span class="logo-accent">Web</span>Studio</a
-          >
+    <header class="page-header container">
+      <a class="logo" href="./index.html">
+        <span class="logo-accent">Web</span>Studio</a
+      >
+      <button class="menu-button" type="button">
+        <svg width="40" height="40" aria-label="mobile menu switch">
+          <use
+            class="icon-menu"
+            href="./images/icons.svg#icon-menu-burger"
+          ></use>
+        </svg>
+      </button>
+
+      <div class="menu-container">
+        <nav>
           <ul class="site-nav list">
             <li class="item">
               <a class="link current" href="./index.html">Studio</a>
@@ -56,7 +64,6 @@
     </header>
 
     <main>
-      <!--Hero-->
       <section class="hero-section">
         <h1 class="title">Effective Solutions for Your Business</h1>
         <button class="order-button" type="button" data-modal-open>
@@ -64,7 +71,6 @@
         </button>
       </section>
 
-      <!--Features-->
       <section class="features-section">
         <div class="container">
           <h2 class="title" hidden>Features</h2>
@@ -122,7 +128,6 @@
         </div>
       </section>
 
-      <!--What are we doing-->
       <section class="work-list-section">
         <div class="container">
           <h2 class="title">What are we doing</h2>
@@ -156,7 +161,6 @@
         </div>
       </section>
 
-      <!--Our Team-->
       <section class="our-team-section">
         <div class="container">
           <h2 class="title">Our Team</h2>
@@ -170,8 +174,8 @@
                 width="264"
               />
               <div class="card-label">
-                <h3 class="subtitle">Mark Guerrero</h3>
-                <p class="text">Product Designer</p>
+                <h3 class="team-subtitle">Mark Guerrero</h3>
+                <p class="team-text">Product Designer</p>
                 <ul class="social-list list">
                   <li class="social-item">
                     <a class="social-link" href="">
@@ -212,8 +216,8 @@
                 width="264"
               />
               <div class="card-label">
-                <h3 class="subtitle">Tom Ford</h3>
-                <p class="text">Frontend Developer</p>
+                <h3 class="team-subtitle">Tom Ford</h3>
+                <p class="team-text">Frontend Developer</p>
                 <ul class="social-list list">
                   <li class="social-item">
                     <a class="social-link" href="">
@@ -254,8 +258,8 @@
                 width="264"
               />
               <div class="card-label">
-                <h3 class="subtitle">Camila Garcia</h3>
-                <p class="text">Marketing</p>
+                <h3 class="team-subtitle">Camila Garcia</h3>
+                <p class="team-text">Marketing</p>
                 <ul class="social-list list">
                   <li class="social-item">
                     <a class="social-link" href="">
@@ -296,8 +300,8 @@
                 width="264"
               />
               <div class="card-label">
-                <h3 class="subtitle">Daniel Wilson</h3>
-                <p class="text">UI Designer</p>
+                <h3 class="team-subtitle">Daniel Wilson</h3>
+                <p class="team-text">UI Designer</p>
                 <ul class="social-list list">
                   <li class="social-item">
                     <a class="social-link" href="">
@@ -334,7 +338,6 @@
         </div>
       </section>
 
-      <!--Customers-->
       <section class="customers-section">
         <div class="container">
           <h2 class="title">Customers</h2>
@@ -387,7 +390,6 @@
       </section>
     </main>
 
-    <!--Footer-->
     <footer class="footer">
       <div class="container">
         <div class="studio">
@@ -456,9 +458,10 @@
         </form>
       </div>
     </footer>
+    -->
 
     <!--Modal-->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
           <svg class="icon-close">
@@ -522,7 +525,7 @@
           <button type="submit" class="send-btn">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <!--Scripts-->
     <script src="./js/modal.js"></script>
