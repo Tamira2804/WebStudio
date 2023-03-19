@@ -768,7 +768,6 @@ h6 {
     padding-bottom: 96px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .portfolio {
     padding-top: 100px;
@@ -778,12 +777,24 @@ h6 {
 
 .filters {
   display: flex;
-  justify-content: center;
-  margin-bottom: 72px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-bottom: 48px;
 }
-
-.filters .item:not(:last-child) {
-  margin-right: 24px;
+@media screen and (min-width: 768px) {
+  .filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 64px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters {
+    margin-bottom: 72px;
+  }
 }
 
 .filters .button {
@@ -814,16 +825,23 @@ h6 {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
-  width: 360px;
-  margin-right: 24px;
-  margin-bottom: 48px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    width: 356px;
+  }
 }
 
-.portfolio-item:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .portfolio-item {
+    width: 360px;
+  }
 }
 
 .portfolio-link {
