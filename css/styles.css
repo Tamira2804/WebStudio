@@ -79,6 +79,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 24px 16px;
 }
 @media screen and (max-width: 767px) {
   .nav-desktop,
@@ -193,7 +194,7 @@ h6 {
   padding: 40px;
   padding-right: 35px;
   background-color: rgba(46, 47, 66, 0.4);
-  opacity: 0;
+  opacity: 1;
   visibility: hidden;
   pointer-events: none;
 
