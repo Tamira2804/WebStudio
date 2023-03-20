@@ -141,7 +141,7 @@ h6 {
 }
 .site-nav .link.current::after {
   position: absolute;
-  bottom: 0;
+  bottom: -24px;
   left: 0;
   content: "";
   width: 100%;
