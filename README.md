@@ -1,16 +1,8 @@
 # WebStudio
 
-Mobile-first
+The landing page was created using only HTML and CSS. The layout is made for three breakpoints: 480px, 768px and 1200px.
 
-break-points
-480
-768
-1200
+<img src="./images/webstudio-page.png" alt="webstudio-page">
 
-@media screen and (min-width: 768px) {}
-
-@media screen and (min-width: 1200px) {}
-
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) { }
+All background and content raster images are responsive and support x1 and x2 screens.
+![Demonstration](./assets/web-studio.png)
